@@ -99,39 +99,6 @@ Tracks capacity utilization across all facilities:
 - **Public Health Policy**: Evidence-based emergency response planning
 - **Urban Planning**: Emergency services infrastructure development
 
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/emergency-routing-optimization.git
-cd emergency-routing-optimization
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## Usage
-
-```python
-# Load and preprocess data
-from src.data_preprocessing import load_ems_data, load_hospital_data
-from src.optimization import EmergencyRoutingOptimizer
-
-# Initialize the optimization model
-optimizer = EmergencyRoutingOptimizer()
-
-# Load datasets
-ems_data = load_ems_data('data/ems_incidents.csv')
-hospital_data = load_hospital_data('data/hospitals.csv')
-
-# Run optimization
-results = optimizer.optimize(ems_data, hospital_data)
-
-# Generate routing recommendations
-routing_plan = results.get_routing_plan()
-utilization_report = results.get_utilization_report()
-```
-
 ## Project Structure
 
 ```
@@ -149,14 +116,6 @@ emergency-routing-optimization/
 - Matplotlib/Seaborn (visualization)
 - Geopandas (spatial analysis)
 - PuLP/Gurobi (mathematical optimization)
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit changes (`git commit -am 'Add new feature'`)
-4. Push to branch (`git push origin feature/improvement`)
-5. Create Pull Request
 
 ## License
 
